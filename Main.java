@@ -32,6 +32,7 @@ public class Main {
                     System.out.println("Enter the Class Id: ");
                     int Clid = sc.nextInt();
                     controller.updateRecord(newName,Clid);
+                    break;
                 case 4:
                     System.out.println("Enter First Name: ");
                     String fName = sc.nextLine();
@@ -41,6 +42,7 @@ public class Main {
                     int age_DB = sc.nextInt();
 
                     controller.deleteRecord(fName, lName, age_DB);
+                    break;
                 default:
                     break;
             }
