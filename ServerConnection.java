@@ -21,7 +21,7 @@ public class ServerConnection {
         try {
             String url = "jdbc:mysql://localhost:3306/project";
             String userName = "root";
-            String password = "Sidhu@1234";
+            String password = "S***4";
             Connection conn = DriverManager.getConnection(url, userName, password);
             Statement stm = conn.createStatement();
             String query = "CREATE TABLE " + tableName + " (ClassId int NOT NULL AUTO_INCREMENT, FirstName varchar(20) NOT NULL, LastName varchar(20), Age int, PRIMARY KEY(ClassId))";
