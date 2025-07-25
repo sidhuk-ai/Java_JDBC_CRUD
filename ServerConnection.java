@@ -6,7 +6,7 @@ public class ServerConnection {
         try {
             String url = "jdbc:mysql://localhost:3306/";
             String userName = "root";
-            String password = "Sidhu@1234";
+            String password = "S***4";
             Connection conn = DriverManager.getConnection(url, userName, password);
             Statement stm = conn.createStatement();
             String query = "CREATE database " + dataBase;
@@ -39,7 +39,7 @@ public class ServerConnection {
             String url = "jdbc:mysql://localhost:3306/";
             String db = "project";
             String userName = "root";
-            String password = "Sidhu@1234";
+            String password = "S***4";
             Connection conn = DriverManager.getConnection(url+db, userName, password);
             String query = "INSERT INTO Student (FirstName, LastName, Age) VALUES (?,?,?)";
             PreparedStatement pstm = conn.prepareStatement(query);
@@ -59,7 +59,7 @@ public class ServerConnection {
             String url = "jdbc:mysql://localhost:3306/";
             String db = "project";
             String userName = "root";
-            String password = "Sidhu@1234";
+            String password = "S***4";
             Connection conn = DriverManager.getConnection(url+db, userName, password);
             Statement stm = conn.createStatement();
             String query = "SELECT * FROM Student";
@@ -83,7 +83,7 @@ public class ServerConnection {
                 String url = "jdbc:mysql://localhost:3306/";
                 String db = "project";
                 String userName = "root";
-                String password = "Sidhu@1234";
+                String password = "S***4";
                 Connection conn = DriverManager.getConnection(url+db, userName, password);
                 String query = "UPDATE Student SET FirstName=? WHERE ClassId=?";
                 PreparedStatement pstm = conn.prepareStatement(query);
@@ -100,7 +100,7 @@ public class ServerConnection {
     public void deleteRecord(String firstName, String lastName, int age) {
         String url = "jdbc:mysql://localhost:3306/project";
         String username = "root";
-        String password = "Sidhu@1234";
+        String password = "S***4";
 
         String sql = "DELETE FROM Student WHERE FirstName=? AND LastName=? AND Age=?";
 
